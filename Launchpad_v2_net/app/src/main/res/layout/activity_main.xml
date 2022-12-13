@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2637"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:onClick="dc_button_pressed"
+        android:text="Disconnect"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="8dp"
+        app:boxBackgroundColor="@color/purple_700"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipAddr"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="IP"
+            android:text="192.168.0.131"
+            android:textColor="@color/teal_200"
+            android:textColorHint="@color/teal_700"
+            android:textSize="14sp"
+            android:translationY="-15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fileNames"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/file_names"
+                android:textColor="@color/teal_200"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/BTNKey1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btnkey_base"
+                android:contentDescription="1"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+
+            <ImageView
+                android:id="@+id/BTNKey2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="2"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+
+            <ImageView
+                android:id="@+id/BTNKey3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="3"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/BTNKey4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="4"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+
+            <ImageView
+                android:id="@+id/BTNKey5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="5"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+
+            <ImageView
+                android:id="@+id/BTNKey6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="6"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/BTNKey7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="7"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+
+            <ImageView
+                android:id="@+id/BTNKey8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="8"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+
+            <ImageView
+                android:id="@+id/BTNKey9"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="9"
+                android:onClick="BTNKey_pressed"
+                app:srcCompat="@drawable/btnkey_base" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
