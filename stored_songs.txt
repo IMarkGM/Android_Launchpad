@@ -1,0 +1,9 @@
+snares_1.wav
+snares_2.wav
+snares_3.wav
+hi_hats_1.wav
+hi_hats_2.wav
+hi_hats_3.wav
+guitar_c.wav
+hi_hats_2.wav
+guitar_g.wav
